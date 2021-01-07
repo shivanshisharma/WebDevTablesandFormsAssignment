@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Assignment 1</title>
+   <link rel="stylesheet" href="assignment1.css" />
+</head>
+<body>
+  <form action="http://kunz-pc.sce.carleton.ca/sysc4504/process.php" method="GET">
+    <fieldset>
+      <legend>Advanced Art Work Search</legend>
+<!-- The top bar search box -->
+      <div id="searchBox">
+        <input type="textarea" name="search" placeholder="Search titles">Subject:
+        <input type="radio" name="Subject" value="1">History
+        <input type="radio" name="Subject" value="2">Person
+        <input type="radio" name="Subject" value="3">Landscape
+<!-- Drop-down list for genres -->
+        <select name="genres">
+          <option value="0">Select Genre</option>
+          <option value="1">Baroque</option>
+          <option value="2">Renaissance</option>
+          <option value="3">Realism</option>
+        </select>
+        <!-- Filter button -->
+        <input type="submit" value="Filter">
+      </div>
+      <!--  Bulk actions drop-down list-->
+      <div id="settingsBox">
+        <select name="Bulk Actions">
+          <option value="0">Bulk Actions</option>
+          <option value="1">Archive</option>
+          <option value="2">Edit</option>
+          <option value="3">Delete</option>
+          <option value="4">Collection</option>
+        </select>
+<!-- Apply to all button -->
+        <input type="submit" value="Apply To All">
+      </div>
+          <!-- division for table -->
+      <div id="paintingBox">        
+        <table>
+            <!-- table caption -->
+          <caption><b>Paintings</b> </caption>
+          <col class="paintingName">
+          <colgroup id="paintingTitle"></colgroup>
+            <!-- table headings -->
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>Title</th>
+              <th>Artist</th>
+              <th>Year</th>
+              <th>Genre</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+           
+          <tr>
+              <!-- Adding checkboxes to each row -->
+            <td><input type="checkbox" name ="index[]" value="10"></td>
+              <!-- adding book image in each row -->
+            <td><img src="images/05030.jpg" alt="chart" title="image of Death of Marat"></td>
+            <td><em>Death of Marat</em></td>
+            <td>David, Jacques-Louis</td>
+            <td>1793</td>
+            <td>Romanticism</td>
+            <!-- Adding action dummy buttons -->
+            <td> 
+              <button><img src="images/archive.png"></button>
+              <button> <img src="images/edit.png"> </button>
+              <button> <img src="images/delete.png"></button>
+              <button><img src="images/Collection.png"></button>           
+            </td>
+          </tr>
+
+          <tr>
+             <td><input type="checkbox" name="index[]" value="20"></td>
+            <td><img src="images/06010.jpg" alt="chart" title="image of Potrait of Eleanor of Toledo"></td>
+            <td><em>Potrait of Eleanor of Toledo</em></td>
+            <td>Bronzino, Angnolo</td>
+            <td>1545</td>
+            <td>Mannerism</td>
+            <td> 
+              <button><img src="images/archive.png"></button>
+              <button> <img src="images/edit.png"> </button>
+              <button> <img src="images/delete.png"></button>
+              <button><img src="images/Collection.png"></button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" name="index[]" value="30"></td>
+            <td><img src="images/07020.jpg" alt="chart" title="image of Liberty Leading the People"></td>
+            <td><em>Liberty Leading the People</em></td>
+            <td>Delacroix, Eugene</td>
+            <td>1830</td>
+            <td>Romanticism</td>
+            <td> 
+              <button><img src="images/archive.png"></button>
+              <button> <img src="images/edit.png"> </button>
+              <button> <img src="images/delete.png"></button>
+              <button><img src="images/Collection.png"></button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" name = "index[]" value="40"></td>
+            <td><img src="images/13030.jpg" alt="chart" title="image of Arrangement in Grey and Black"></td>
+            <td><em>Arrangement in Grey and Black</em></td>
+            <td>Whistler, James Abbott</td>
+            <td>1871</td>
+            <td>Realism</td>
+            <td> 
+              <button><img src="images/archive.png"></button>
+              <button> <img src="images/edit.png"> </button>
+              <button> <img src="images/delete.png"></button>
+              <button><img src="images/Collection.png"></button>
+            </td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" name = "index[]" value="50"></td>
+            <td><img src="images/120010.jpg" alt="chart" title="image of Mademoiselle Caroline Riviere"></td>
+            <td><em>Mademoiselle Caroline Riviere</em></td>
+            <td>Ingres, Jean-Auguste</td>
+            <td>1806</td>
+            <td>Neo-Classicism</td>
+            <td> 
+              <button><img src="images/archive.png"></button>
+              <button> <img src="images/edit.png"> </button>                <button> <img src="images/delete.png"></button>
+              <button><img src="images/Collection.png"></button>
+            </td>
+          </tr>
+          
+        </table>
+      </div> 
+    </fieldset>  
+
+    
+  </form>
+</body>
+</html>

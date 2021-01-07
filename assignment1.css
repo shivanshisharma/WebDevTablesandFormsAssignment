@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: 'Merriweather', serif; 
+}
+body {
+   font-family: 'Open Sans', Arial, sans-serif;
+   font-size: 16px;
+}
+/*Styling for the legend*/
+legend { 
+   background-color: #616161 ;
+   color: white;
+   text-align: center;
+   padding-left: 34em;
+   padding-right: 34em;
+   padding-top: 0.3em;
+   padding-bottom: 0.3em;
+}
+fieldset {
+   margin: 1em auto;
+   background-color: #F5F5F5;
+   padding-right: 3em;
+   padding-left: 3em;
+   padding-bottom: 0.2em;
+}
+div#searchBox, div#settingsBox, div#paintingBox {
+   margin: 0.25em auto;
+   background-color: #E0E0E0;
+   border: 1pt solid #616161;
+}
+div#searchBox { 
+	margin-top: 1em;
+	padding: 0.7em;
+}
+div#settingsBox{
+	padding: 0.9em;
+}
+/*Setting background color for table contents*/
+div#paintingBox{
+	padding: 1em;
+	background-color: #EEEEEE;
+}
+table{
+	padding: 20pt;
+	border-bottom: 0.7px solid;
+	text-align: left;
+	border-collapse: collapse;
+}
+caption {
+   background-color: #BDBDBD;
+   padding: 0.4em;
+   text-align: center;
+}
+/*table head styliing*/
+thead tr{
+	background-color: #E0E0E0;
+	border-bottom: 2px solid #BDBDBD;
+}
+/*table columnds styling*/
+td{
+	border-bottom: 2px solid #BDBDBD;
+	padding: 0.8em;
+}
